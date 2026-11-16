@@ -52,4 +52,9 @@
        lineage-24.0 branch, so its latest branch is used. -->
   <project path="hardware/motorola" name="LineageOS/android_hardware_motorola" remote="github" revision="lineage-24.0" />
   <project path="external/bson" name="LineageOS/android_external_bson" remote="github" revision="lineage-22.2" />
+
+  <!-- Skia with the Adreno 508 tessellation path renderer workaround
+       (charging bolt drawn as a square, garbage around progress arcs) -->
+  <remove-project name="platform/external/skia" />
+  <project path="external/skia" name="android_external_skia" remote="moto-sdm660" revision="lineage-24.0" groups="pdk" />
 </manifest>
